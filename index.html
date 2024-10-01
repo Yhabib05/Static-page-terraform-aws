@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Yassin's Portfolio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 2rem;
+    }
+
+    .content {
+      margin: 2rem auto;
+      max-width: 800px;
+      text-align: center;
+    }
+
+    .intro {
+      margin-bottom: 3rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #1a73e8;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #f39c12;
+    }
+
+    .projects {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .project {
+      background-color: white;
+      padding: 1rem;
+      margin: 1rem;
+      width: 250px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding: 1rem;
+      text-align: center;
+      background-color: #333;
+      color: white;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .animated {
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Welcome to Yassin's Portfolio
+  </header>
+
+  <div class="content animated">
+    <section class="intro">
+      <img src="profile.JPG" alt="Yassin's Profile Picture" class="profile-img">
+      <h2>Who I Am</h2>
+      <p>
+        Hi! I'm Yassin, a passionate software engineer with expertise in cybersecurity and development. I love building secure, scalable solutions and working on exciting projects that challenge my problem-solving skills.
+      </p>
+      <p>
+        Check out my <a href="https://github.com/Yhabib05/" target="_blank">GitHub</a> or connect with me on <a href="https://www.linkedin.com/in/yassin-habib/" target="_blank">LinkedIn</a> for more of my work!
+      </p>
+    </section>
+
+    <section class="projects">
+      <div class="project">
+        <h3>Project 1: TOTP Generator</h3>
+        <p>A web-based tool for generating Time-based One-Time Passwords with support for multiple algorithms.</p>
+      </div>
+      <div class="project">
+        <h3>Project 2: Intrusion Detection System</h3>
+        <p>An AI-powered IDS that detects network anomalies and attacks with enhanced accuracy using custom rules.</p>
+      </div>
+      <div class="project">
+        <h3>Others:</h3>
+        <p>Caesar cipher implementation</p>
+        <p>Pricing model using Monte Carlo simulations for Black-Scholes</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    © 2024 Yassin - Let's connect on <a href="https://github.com/Yhabib05/" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/yassin-habib/" target="_blank">LinkedIn</a>
+  </footer>
+
+</body>
+</html>
